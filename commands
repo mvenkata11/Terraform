@@ -1,0 +1,7 @@
+terraform init
+terraform plan
+terraform apply
+terraform show
+terraform taint docker_container.first_container # it force to create a container again
+terraform untaint docker_container.first_container 
+
