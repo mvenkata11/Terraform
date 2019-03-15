@@ -1,6 +1,13 @@
+variable "image" {
+description = "image for container"
+}
+
+
+
+
 resource "docker_image" "image_id" {
 
-name = "ghost:latest"
+name = "${var.image}"
 }
 
 resource "docker_container" "first_container"{
