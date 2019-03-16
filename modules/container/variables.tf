@@ -1,9 +1,3 @@
-variable "image" {
-description = "image for container"
-default = "ghost:latest"
-}
-
-
 variable "container_name" {
 description = "container name"
 default = "container_ghost"
