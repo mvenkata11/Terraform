@@ -1,11 +1,12 @@
-output "IP Address"{
-value = "${docker_container.first_container.ip_address}"
+output "ip" {
 
-
-}
-output "container_name"{
-value = "${docker_container.first_container.name}"
-
+value = "${docker_container.container_id.ip_address}"
 
 }
 
+
+output "container_name" {
+
+value = "${docker_container.container_id.name}"
+
+}

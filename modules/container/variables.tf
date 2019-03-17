@@ -1,15 +1,4 @@
-variable "container_name" {
-description = "container name"
-default = "container_ghost"
-}
-
-variable "internal" {
-description = "internal port no"
-default = "2368"
-}
-
-variable "external" {
-description = "external port no"
-default = "9090"
-}
-
+variable "name" {}
+variable "image" {}
+variable "int_port" {}
+variable "ext_port" {}

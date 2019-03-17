@@ -1,12 +1,13 @@
+resource "docker_container" "container_id" {
 
-resource "docker_container" "first_container"{
+name = "${var.name}"
+image = "${var.image}"
 
-name = "${var.container_name}"
-image = "${docker_image.image_id.latest}"
-ports{
+ports {
 
-internal = "${var.internal}"
-external = "${var.external}"
+internal = "${var.int_port}"
+external = "${var.ext_port}"
+
 }
-}
 
+}
