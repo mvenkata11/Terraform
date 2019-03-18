@@ -1,5 +1,4 @@
 
-
 variable "env" {
 
 description = "dev or prod"
@@ -9,11 +8,11 @@ description = "dev or prod"
 
 variable "image" {
 type ="map"
+
 default = { 
 dev = "ghost:alpine"
 prod = "ghost:latest"
 }
-
 }
 
 variable "container_name" {
@@ -23,6 +22,7 @@ default = {
 dev = "container_ghost_dev"
 prod = "container_ghost_production"
 }
+
 }
 
 variable "int_port" {
