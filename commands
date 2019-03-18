@@ -5,3 +5,8 @@ terraform show
 terraform taint docker_container.first_container # it force to create a container again
 terraform untaint docker_container.first_container 
 
+terraform console  #to check the enivornments
+
+terraform workspace new prod #to save seperate state file for each environment
+terraform workspace select prod # will switches to prod environment
+

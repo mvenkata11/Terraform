@@ -21,7 +21,7 @@ variable "container_name" {
 type ="map"
 default = {
 dev = "container_ghost_dev"
-prod = "container_ghost_prod"
+prod = "container_ghost_production"
 }
 }
 
