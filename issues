@@ -1,0 +1,4 @@
+error: Error downloading modules: Error loading modules: module image: open .terraform/modules/6d78b4b74dc003ea438b6967adc284a0: no such file or directory
+
+solution : terraform init -upgrade
+

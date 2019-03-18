@@ -1,15 +1,43 @@
+
+
+variable "env" {
+
+description = "dev or prod"
+
+}
+
+
 variable "image" {
-default = "ghost:alpine"
+type ="map"
+default = { 
+dev = "ghost:alpine"
+prod = "ghost:latest"
+}
+
 }
 
 variable "container_name" {
-default = "container_ghost"
+
+type ="map"
+default = {
+dev = "container_ghost_dev"
+prod = "container_ghost_prod"
+}
 }
 
 variable "int_port" {
-default = "2368"
+type ="map"
+default = {
+dev = "2368"
+prod = "2368"
+}
 }
 
 variable "ext_port" {
-default = "9090"
+type ="map"
+default = {
+dev = "9090"
+prod = "90"
+
+}
 }
