@@ -10,3 +10,5 @@ terraform console  #to check the enivornments
 terraform workspace new prod #to save seperate state file for each environment
 terraform workspace select prod # will switches to prod environment
 
+terraform fmt --diff     #formatting tf file
+
